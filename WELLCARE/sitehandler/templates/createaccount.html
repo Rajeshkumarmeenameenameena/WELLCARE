@@ -105,12 +105,12 @@
     alert('Patient saved Sucessfully..........')
     window.location = ('{% url 'loginpage' %}')
 </script>
-{% endifequal%}
-
+{% endifequal %}
 {% ifequal error "yes" %}
 <script type="text/javascript">
     /*alert('{{e}}')*/
     alert('Email already exists....')
+    window.location = ('{% url 'loginpage' %}')
 </script>
 {% endifequal%}
 {% endblock %}
